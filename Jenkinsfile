@@ -6,7 +6,7 @@ pipeline {
                 sh ' echo "Hello World" '       
 		
 		sh ''' 
-		echo "Multistep Script----SRI"
+		echo "Multistep Script----SRINATH"
 		ls -a
 
 		'''
