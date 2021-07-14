@@ -1,16 +1,23 @@
 pipeline {
     agent any
     stages{
-        stage('Build'){
+        stage('Sample'){
             steps{
                 sh ' echo "Hello World" '       
 		
 		sh ''' 
 		echo "Multistep Script----SRINATH"
-		ls -a
+		
+		ls -ai
 
 		'''
             }
         }
+	stage('Mvn Build'){
+	steps{
+	     sh 'mvn install'
+	}
+	
+	}
     }
 }
